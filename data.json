@@ -1,0 +1,47 @@
+[
+    {
+        "question": "What is the capital of Kenya?",
+        "answers": [
+            { "text": "Dar es Salaam", "correct": false },
+            { "text": "Nairobi", "correct": true },
+            { "text": "Mombasa", "correct": false },
+            { "text": "Kisumu", "correct": false }
+        ]
+    },
+    {
+        "question": "What is the highest mountain in Kenya?",
+        "answers": [
+            { "text": "Mt.Kilimanjaro", "correct": false },
+            { "text": "Mt.Kenya", "correct": true },
+            { "text": "Mt.Elgon", "correct": false },
+            { "text": "Mt.Longonot", "correct": false }
+        ]
+    },
+    {
+        "question": "What is the currency of Kenya?",
+        "answers": [
+            { "text": "Euro", "correct": false },
+            { "text": "US Dollar", "correct": false },
+            { "text": "Kenyan Shilling", "correct": true },
+            { "text": "British Pound", "correct": false }
+        ]
+    },
+    {
+        "question": "What is the largest lake in Kenya?",
+        "answers": [
+            { "text": "Lake Victoria", "correct": false },
+            { "text": "Lake Magadi", "correct": false },
+            { "text": "Lake Naivasha", "correct": false },
+            { "text": "Lake Turkana", "correct": true }
+        ]
+    },
+    {
+        "question": "What is the longest river in Kenya?",
+        "answers": [
+            { "text": "Tana River", "correct": true },
+            { "text": "Mara River", "correct": false },
+            { "text": "Athi River", "correct": false },
+            { "text": "Turkwel River", "correct": false }
+        ]
+    }
+]
