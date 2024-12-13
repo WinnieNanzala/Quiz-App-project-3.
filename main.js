@@ -13,7 +13,8 @@ fetch('http://127.0.0.1:8080/data.json')
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
-
+const quizDiv = document.querySelector(".quiz");
+const exitButton = document.createElement("button");
 
 // Variables to track the current question index and the user's score
 let currentQuestionIndex = 0;
@@ -48,6 +49,7 @@ function showQuestion(){
 
 function resetState(){
     nextButton.style.display = "none";
+    exitButton.style.display = "none";
     while(answerButtons.firstChild){
         answerButtons.removeChild(answerButtons.firstChild);
     }
@@ -81,9 +83,11 @@ function showScore(){
     questionElement.innerHTML = `Your score is ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
-    const button = document.createElement('button');
-    button.textContent = 'Exit';
-    container.appendChild(button);
+    exitButton.classList.add("exit_button");
+    exitButton.textContent = 'Exit';
+    exitButton.style.display = "block";
+    quizDiv.appendChild(exitButton);
+    exitButton.addEventListener("click", exitPage);
 }
 
 function handleNextButton(){
@@ -93,6 +97,9 @@ function handleNextButton(){
     } else {
        showScore(); 
     }
+}
+function exitPage(){
+    window.alert('You have finished the quiz, click X to exit!');
 }
 
 nextButton.addEventListener("click", ()=>{

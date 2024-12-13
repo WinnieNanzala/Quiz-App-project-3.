@@ -8,8 +8,7 @@
 body{
     background: orangered;
 }
-h3,
-ol,
+.about,
 .app{
     background: white;
     width: 90%;
@@ -33,7 +32,7 @@ ol,
     font-weight: 600;
     font-size: 18px;
 }
-.btn{
+.btn{ 
     font-weight: 500;
     text-align: left;
     color: black;
@@ -53,6 +52,7 @@ ol,
 .btn:disabled{
     cursor: no-drop;
 }
+.exit_button,
 #next-btn{
     cursor: pointer;
     border: 0;
